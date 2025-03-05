@@ -2,6 +2,7 @@ pip install -U euroeval[all]@git+https://github.com/EuroEval/EuroEval
 
 while true; do
 
+# Norwegian
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m meta-llama/Llama-3.1-405B-Instruct-FP8
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m mgoin/Nemotron-4-340B-Instruct-hf-FP8
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m Qwen/Qwen2.5-72B-Instruct
@@ -11,9 +12,9 @@ euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t 
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m meta-llama/Meta-Llama-3-70B
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m meta-llama/Meta-Llama-3-70B-instruct
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
-euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m meta-llama/Llama-2-70b-hf (few-shot, val)
-euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m meta-llama/Llama-2-70b-chat-hf (few-shot, val)
-euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m 152334H/miqu-1-70b-sf (few-shot, val)
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -m meta-llama/Llama-2-70b-hf
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -m meta-llama/Llama-2-70b-chat-hf
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -m 152334H/miqu-1-70b-sf
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m NorwAI/NorwAI-Mixtral-8x7B-instruct
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m NorwAI/NorwAI-Mixtral-8x7B
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m mistralai/Mixtral-8x7B-v0.1
@@ -51,5 +52,40 @@ euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t 
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m utter-project/EuroLLM-9B-Instruct
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m google/gemma-7b
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l no -t knowledge -t common-sense-reasoning -m google/gemma-7b-it
+
+# Icelandic
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m google/gemma-7b
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m google/gemma-7b-it
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m utter-project/EuroLLM-9B
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m utter-project/EuroLLM-9B-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m google/gemma-2-9b-it
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m google/gemma-2-9b
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m tiiuae/Falcon3-10B-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m tiiuae/Falcon3-10B-Base
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m upstage/SOLAR-10.7B-v1.0
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m tiiuae/falcon-11B
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m speakleash/Bielik-11B-v2.3-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m norallm/normistral-11b-warm
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m meta-llama/Llama-2-13b-hf
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m meta-llama/Llama-2-13b-chat-hf
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m allenai/OLMo-2-1124-13B
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m LumiOpen/Viking-13B
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m mistralai/Mistral-Small-24B-Instruct-2501
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m ThatsGroes/gemma-2-27b-it-FP8-Dynamic
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m CohereForAI/c4ai-command-r-08-2024
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m Qwen/QwQ-32B-Preview
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m CohereForAI/c4ai-command-r-v01
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m mistralai/Mixtral-8x7B-v0.1
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m mistralai/Mixtral-8x7B-Instruct-v0.1
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m NorwAI/NorwAI-Mixtral-8x7B-instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m NorwAI/NorwAI-Mixtral-8x7B
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m meta-llama/Meta-Llama-3-70B
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m meta-llama/Llama-3.1-70B-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m meta-llama/Llama-3.3-70B-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m meta-llama/Meta-Llama-3-70B-instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m Qwen/Qwen2.5-72B-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m mgoin/Nemotron-4-340B-Instruct-hf-FP8
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l is -t knowledge -m meta-llama/Llama-3.1-405B-Instruct-FP8
 
 done
