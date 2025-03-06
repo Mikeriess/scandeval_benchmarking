@@ -139,4 +139,33 @@ euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l da -m 
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l da -m meta-llama/Llama-2-70b-chat-hf
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l da -m syvai/danskgpt-chat-llama3-70b
 
+# Italian
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m google/gemma-7b
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m google/gemma-7b-it
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m utter-project/EuroLLM-9B
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m utter-project/EuroLLM-9B-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m google/gemma-2-9b-it
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m google/gemma-2-9b
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m tiiuae/Falcon3-10B-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m tiiuae/Falcon3-10B-Base
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m upstage/SOLAR-10.7B-v1.0
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m tiiuae/falcon-11B
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m speakleash/Bielik-11B-v2.3-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m norallm/normistral-11b-warm
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m meta-llama/Llama-2-13b-hf
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m allenai/OLMo-2-1124-13B
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m LumiOpen/Viking-13B
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l it -m mistralai/Mistral-Small-24B-Instruct-2501
+
+# Additions to European leaderboard
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m meta-llama/Llama-3.1-405B-Instruct-FP8
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m meta-llama/Llama-3.1-70B-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m meta-llama/Llama-3.3-70B-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m Qwen/Qwen2.5-72B-Instruct
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m Qwen/QwQ-32B-Preview
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m ThatsGroes/gemma-2-27b-it-FP8-Dynamic
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m mistralai/Mixtral-8x7B-v0.1
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m mistralai/Mixtral-8x7B-Instruct-v0.1
+euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -l fo -l is -m google/gemma-2-27b-it
+
 done
