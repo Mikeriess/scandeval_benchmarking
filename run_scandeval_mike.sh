@@ -1,4 +1,5 @@
 pip install -U euroeval[all]
+pip install -U wheel && FLASH_ATTENTION_SKIP_CUDA_BUILD=TRUE pip install flash-attn --no-build-isolation
 
 while true; do
 
