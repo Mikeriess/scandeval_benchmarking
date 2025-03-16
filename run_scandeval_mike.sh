@@ -2,8 +2,6 @@ pip install -U euroeval[all]
 
 while true; do
 
-# Additions to European leaderboard
-euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m meta-llama/Llama-3.1-405B-Instruct-FP8
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m meta-llama/Llama-3.1-70B-Instruct
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m Qwen/Qwen2.5-72B-Instruct
 euroeval --evaluate-test-split --clear-model-cache --trust-remote-code -l fr -l it -m Qwen/QwQ-32B-Preview
